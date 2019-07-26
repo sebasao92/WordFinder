@@ -17,12 +17,8 @@ public class StringFinder {
         List<Character> textAsList = StringConverter.stringToArrayList(text);
         int numberOfTimes = 0;
         
-        while(true) {
-            if(findWordintoArrayList(word, textAsList)){
+        while(findWordintoArrayList(word, textAsList)) {
                 numberOfTimes++;
-            } else {
-                break;
-            }
         }
             
         return numberOfTimes;
